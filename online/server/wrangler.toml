@@ -1,0 +1,14 @@
+name = "dna-online"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Create the storage once:  npx wrangler kv namespace create DNA  → paste the id below
+[[kv_namespaces]]
+binding = "DNA"
+id = "PASTE_KV_NAMESPACE_ID_HERE"
+
+[vars]
+# Your site address(es), comma separated, e.g. "https://yourdomain.com"
+ALLOWED_ORIGINS = ""
+LENS_DAILY_LIMIT = "15"
